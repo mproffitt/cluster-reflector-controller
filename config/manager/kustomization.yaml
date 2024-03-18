@@ -4,5 +4,5 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
 - name: controller
-  newName: ghcr.io/weaveworks/cluster-reflector-controller
-  newTag: latest
+  newName: docker.io/choclab/cluster-reflector-controller
+  newTag: v0.0.10-3-gb35ffb7

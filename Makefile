@@ -4,7 +4,7 @@ VERSION ?= $(shell git describe --tags --always)
 CHART_VERSION := $(shell echo $(VERSION) | sed 's/^v//')
 
 # Image URL to use all building/pushing image targets
-IMG ?= ghcr.io/weaveworks/cluster-reflector-controller:${VERSION}
+IMG ?= docker.io/choclab/cluster-reflector-controller:${VERSION}
 
 CHART_REGISTRY ?= ghcr.io/weaveworks/charts
 
